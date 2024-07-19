@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";    
+import Hook1 from "./components/hook1/Hook1";
+import Hook2 from "./components/hook1/Hook2";
+import Hook3 from "./components/hook1/Hook3";
+import { Main1 } from "./components/main/main";
+import { Main2 } from "./components/main/main";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+    const name= "meo";
+    return(
+        
+        <div>
+            <Header/> 
+            <Main1/>
+            <Main2/>
+            <Footer/>
+            <Hook1/>
+            <Hook2/>
+            <Hook3/>
+        </div>
+    )
 }
 
 export default App;
