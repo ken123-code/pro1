@@ -3,6 +3,8 @@ function Header(){
         <>
             <div>
                 Day la header
+
+                Sua lan 1
             </div>
         </>
     )
