@@ -16,9 +16,14 @@ import Products1 from "./components/hook1/Products1";
 
 import Hook5 from "./components/hook1/Hook5";
 import "./style.css"
-import Students from "./components2/Students";
+import Students from "./components3/Students";
+import Hook7 from "./components/hook1/Hook7";
+import { useState } from "react";
+import API1 from "./components/hook1/API1";
+import Hook11 from "./components/hook1/Hook11";
 function App(){
     const name= "meo";
+    const [show,setShow] = useState(true)
     return(
         
         <div >
@@ -37,8 +42,20 @@ function App(){
             <Products1/> */}
             {/* <Hook5/> */}
             
-            <Students/>
+            {/* <Students/> */}
+            {/* {
+                show?<Hook7/> : "Not show hook7"    
+            }
+            <button onClick={()=>setShow(!show)}>Show</button> */}
 
+            {/* <API1/> */}
+
+            {/* {
+                show? <Hook11/>:"Not Show Hook11"
+            }
+            <button onClick={()=>setShow(!show)}>Show</button> */}
+
+            <Students/>
         </div>
     )
 }
